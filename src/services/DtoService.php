@@ -1,9 +1,9 @@
 <?php
 
-namespace light\app\helpers;
+namespace light\app\services;
 
 
-class Dto
+class DtoService
 {
     public function __construct($attributes)
     {
