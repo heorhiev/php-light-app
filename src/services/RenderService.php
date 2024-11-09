@@ -35,7 +35,7 @@ class RenderService
     private static function getPath(string $filename): string
     {
         if (strstr($filename, '@')) {
-            $filename = AliasService::getAlias($filename);
+            $filename = AliasService::getPath($filename);
         }
 
         return $filename . '.php';
