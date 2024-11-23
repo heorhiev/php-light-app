@@ -19,7 +19,6 @@ class RenderService
     public static function get(string $filename, array $attributes = []): string
     {
         ob_start();
-
         self::template($filename, $attributes);
 
         return trim(ob_get_clean());
